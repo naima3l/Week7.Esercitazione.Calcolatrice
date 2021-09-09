@@ -54,6 +54,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             // 
             this.textValue.Location = new System.Drawing.Point(13, 49);
             this.textValue.Name = "textValue";
+            this.textValue.ReadOnly = true;
             this.textValue.Size = new System.Drawing.Size(240, 31);
             this.textValue.TabIndex = 0;
             // 
@@ -65,6 +66,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "C";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // labelTextValue
             // 
@@ -84,6 +86,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn7.TabIndex = 3;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn8
             // 
@@ -93,6 +96,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn8.TabIndex = 4;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn9
             // 
@@ -102,6 +106,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn9.TabIndex = 5;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn4
             // 
@@ -111,6 +116,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn4.TabIndex = 8;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -120,6 +126,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn5.TabIndex = 7;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
@@ -129,6 +136,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn6.TabIndex = 6;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn1
             // 
@@ -138,6 +146,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn1.TabIndex = 11;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -147,6 +156,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn2.TabIndex = 10;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -156,6 +166,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn3.TabIndex = 9;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btnEqual
             // 
@@ -165,6 +176,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btnEqual.TabIndex = 14;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // btn0
             // 
@@ -174,6 +186,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btn0.TabIndex = 13;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnPunto
             // 
@@ -183,6 +196,7 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btnPunto.TabIndex = 12;
             this.btnPunto.Text = ".";
             this.btnPunto.UseVisualStyleBackColor = true;
+            this.btnPunto.Click += new System.EventHandler(this.btnPunto_Click);
             // 
             // btnMul
             // 
@@ -190,8 +204,10 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btnMul.Name = "btnMul";
             this.btnMul.Size = new System.Drawing.Size(55, 47);
             this.btnMul.TabIndex = 18;
+            this.btnMul.Tag = "moltiplica";
             this.btnMul.Text = "x";
             this.btnMul.UseVisualStyleBackColor = true;
+            this.btnMul.Click += new System.EventHandler(this.btnMul_Click);
             // 
             // btnDiv
             // 
@@ -199,8 +215,10 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(55, 47);
             this.btnDiv.TabIndex = 17;
+            this.btnDiv.Tag = "dividi";
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = true;
+            this.btnDiv.Click += new System.EventHandler(this.btnDiv_Click);
             // 
             // btnSub
             // 
@@ -208,8 +226,10 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(55, 47);
             this.btnSub.TabIndex = 16;
+            this.btnSub.Tag = "sottrai";
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = true;
+            this.btnSub.Click += new System.EventHandler(this.btnSub_Click);
             // 
             // btnSum
             // 
@@ -217,8 +237,10 @@ namespace Week7.Esercitazione.Calcolatrice.WinForms
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(55, 47);
             this.btnSum.TabIndex = 15;
+            this.btnSum.Tag = "somma";
             this.btnSum.Text = "+";
             this.btnSum.UseVisualStyleBackColor = true;
+            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
             // 
             // CalculatorForm
             // 
